@@ -49,7 +49,8 @@ export function CyberGrid({ className = "" }: { className?: string }) {
       grid.position.y = -1.4;
       scene.add(grid);
 
-      const base = Float32Array.from(geo.attributes.position.array);
+      const posAttr = geo.attributes["position"] as import("three").BufferAttribute;
+      const base = Float32Array.from(posAttr.array);
 
       // Particle field
       const count = 700;
@@ -105,13 +106,13 @@ export function CyberGrid({ className = "" }: { className?: string }) {
       const clock = new THREE.Clock();
       const tick = () => {
         const t = clock.getElapsedTime();
-        const arr = geo.attributes.position.array as unknown as Float32Array;
+        const arr = posAttr.array as unknown as Float32Array;
         for (let i = 0; i < arr.length; i += 3) {
           const x = base[i]!;
           const y = base[i + 1]!;
           arr[i + 2] = Math.sin(x * 0.25 + t * 0.9) * 0.5 + Math.cos(y * 0.3 + t * 0.6) * 0.5;
         }
-        geo.attributes.position.needsUpdate = true;
+        posAttr.needsUpdate = true;
 
         points.rotation.y = t * 0.03;
         core.rotation.x = t * 0.25;
