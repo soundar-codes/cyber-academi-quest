@@ -20,7 +20,7 @@ export const Route = createFileRoute("/teacher")({
       },
     ],
   }),
-  component: TeacherConsole;
+  component: TeacherConsole,
 });
 
 function TeacherConsole() {
