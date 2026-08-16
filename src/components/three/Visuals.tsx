@@ -1,3 +1,4 @@
+import type * as THREE from "three";
 import { HoloCanvas } from "./HoloCanvas";
 
 const CYAN = 0x22e0ff;
