@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Courses, attendance, assignments, exams and AI-driven academic insight in one gamified command grid.",
+          "Cyber-themed education management portal with AI academic intelligence, gamified student progress, faculty control and admin analytics.",
       },
     ],
   }),

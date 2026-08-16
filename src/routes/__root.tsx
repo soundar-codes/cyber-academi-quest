@@ -81,17 +81,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Cyber-themed education management portal with AI academic intelligence and gamified progress.",
+          "Cyber-themed education management portal with AI academic intelligence, gamified student progress, faculty control and admin analytics.",
       },
       { name: "author", content: "NEXUS EDU" },
       { property: "og:title", content: "NEXUS EDU — AI Education Management Grid" },
       {
         property: "og:description",
         content:
-          "Courses, attendance, assignments, exams and AI insights in one gamified command grid.",
+          "Cyber-themed education management portal with AI academic intelligence, gamified student progress, faculty control and admin analytics.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "NEXUS EDU — AI Education Management Grid" },
+      { name: "twitter:description", content: "Cyber-themed education management portal with AI academic intelligence, gamified student progress, faculty control and admin analytics." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/55f853b09dffbac82add17f48cfb8011/id-preview-449cf959--bd56a768-a7ed-4218-829f-0612cc0db001.lovable.app-1786859615997.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/55f853b09dffbac82add17f48cfb8011/id-preview-449cf959--bd56a768-a7ed-4218-829f-0612cc0db001.lovable.app-1786859615997.png" },
     ],
     links: [
       {
